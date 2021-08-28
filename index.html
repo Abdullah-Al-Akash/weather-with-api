@@ -9,11 +9,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <style>
         body {
             background: url(images/bg-image.jpg) no-repeat;
             background-size: cover;
             height: 100vh;
+        }
+
+        .icon {
+            font-size: 100px;
         }
     </style>
 </head>
@@ -30,9 +36,14 @@
             </div>
         </form>
         <div class="weather-status text-white text-center">
-            <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
-            <h1 id="city"></h1>
-            <h3><span id="temp"></span>&deg;C, <span id="pressure"></span> </h3>
+            <!-- Weather Situation Image -->
+            <div id="weather-icon">
+
+            </div>
+            <!-- Weather Details -->
+            <h1 class="text-danger fw-bold" id="city">To Know weather enter city name</h1>
+            <h3 class="text-white"><span id="temp"></span>&deg;C, Pressure:<span id="pressure"></span> Humadity: <span
+                    id="humidity"></span> </h3>
             <h1 class="lead" id="situation">Clouds</h1>
         </div>
     </div>
